@@ -1,19 +1,19 @@
-import {DataWaether} from "./WeatherCityList.tsx";
+import {DataWeather} from "./WeatherCityList.tsx";
+
 
 interface Props {
-data: DataWaether
+data: DataWeather
 }
-
 
 
 
 
 export const WeatherCityItem = (props: Props) => {
    // const {data} = props
-    const {id_stacji, stacja, temperatura, suma_opadu, cisnienie} = props.data
+    const { stacja, temperatura, suma_opadu, cisnienie} = props.data
 
     return (
-                <div className='weather-city-item' key={id_stacji}>
+                <div className='weather-city-item'>
                     <div className='weather-city-item__img'>
                         <img src={Number(suma_opadu) > 1  ? '/img/rain.png' : Number(temperatura) > 12 ? "/img/sun.png" : '/img/cloudy.png' } alt='weather-icon'/>
                     </div>
