@@ -32,36 +32,6 @@
     width: 60%;
 }
 
-.pagination {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-}
-
-.pagination ul {
-    display: flex;
-    list-style: none;
-    background: none;
-}
-
-.pagination li {
-    margin: 0 0.2rem;
-    background: none;
-}
-
-.pagination button {
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 0.5rem;
-    background-color: #fff;
-    color: #000;
-    font-size: 1rem;
-}
-
-.pagination button.active {
-    background-color: #000;
-    color: #fff;
-}
 
 @media (max-width: 768px) {
     .weather-city-item {

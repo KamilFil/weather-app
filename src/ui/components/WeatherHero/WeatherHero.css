@@ -1,0 +1,128 @@
+.header {
+    width: 100%;
+    min-height: 40vh;
+    padding: 30px 0;
+}
+
+.header-title {
+    margin: 1rem 0;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.header-subtitle {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.header-search {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.header-search input {
+    width: 70%;
+    padding: 0.5rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    font-size: 1rem;
+    color: white;
+}
+
+.header-search input::placeholder {
+    color: #fff;
+}
+
+.header-search input:focus {
+    outline: none;
+}
+
+.header-search input:focus::placeholder {
+    color: white;
+}
+
+.header-search button {
+    width: 30%;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    color: #000;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.header-content {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-text {
+    width: 40%;
+}
+
+
+.weather-item {
+    display: flex;
+    width: 50%;
+    height: 200px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 30px 20px;
+    background-color: rgba(255, 255, 255, 0.69);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.weather-item-img {
+    width: 30%;
+}
+
+.weather-item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.weather-item-content {
+    width: 60%;
+}
+
+.weather-item-content p {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    .header-text {
+        width: 100%;
+    }
+
+    .weather-item {
+        width: 100%;
+    }
+
+    .weather-item-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0.5rem;
+    }
+
+    .weather-item-content {
+        width: 60%;
+    }
+}
