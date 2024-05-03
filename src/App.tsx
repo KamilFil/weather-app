@@ -1,12 +1,13 @@
 
 import './App.css'
+import {HomePageView} from "./ui/views/HomePageView/HomePageViews.tsx";
 
 function App() {
 
 
   return (
     <>
-     <h1>Weather APP</h1>
+     <HomePageView/>
     </>
   )
 }
