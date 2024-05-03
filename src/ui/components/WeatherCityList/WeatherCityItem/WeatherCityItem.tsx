@@ -1,8 +1,12 @@
 import {DataWeather} from "../WeatherCityList.tsx";
 
+import {config} from "../../../../config/config.ts";
+
 interface Props {
 data: DataWeather
 }
+
+const pathUrl = config.pathUrl
 
 export const WeatherCityItem = (props: Props) => {
    // const {data} = props
@@ -11,7 +15,7 @@ export const WeatherCityItem = (props: Props) => {
     return (
                 <div className='weather-city-item'>
                     <div className='weather-city-item__img'>
-                        <img src={Number(suma_opadu) > 1  ? '/img/rain.png' : Number(temperatura) > 12 ? "/img/sun.png" : '/img/cloudy.png' } alt='weather-icon'/>
+                        <img src={Number(suma_opadu) > 1  ? `${pathUrl}/img/rain.png` : Number(temperatura) > 12 ? `${pathUrl}/img/sun.png` : `${pathUrl}/img/cloudy.png` } alt='weather-icon'/>
                     </div>
                     <div className='weather-city-item__content'>
                         <h2 className='weather-city-item__title'>{stacja}</h2>

@@ -2,6 +2,9 @@ import './HomePageViews.css'
 import {useEffect, useState} from "react";
 import { WeatherCityList} from "../../components/WeatherCityList/WeatherCityList.tsx";
 import {WeatherHero} from "../../components/WeatherHero/WeatherHero.tsx";
+import {config} from "../../../config/config.ts";
+
+const pathUrl = config.pathUrl
 
 export const HomePageView = () => {
 
@@ -30,7 +33,7 @@ export const HomePageView = () => {
     return (
         <>
             <div className='wrapper'>
-                <img className='wrapper-img' src='/img/weatherapp-bg.jpg'></img>
+                <img className='wrapper-img' src={`${pathUrl}/img/weatherapp-bg.jpg`}></img>
                <WeatherHero data={data}/>
                 <WeatherCityList data={data}/>
             </div>
